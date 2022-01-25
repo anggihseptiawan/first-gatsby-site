@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: anggihseptiawan/first-gatsby-site
+  branch: master
+
+media_folder: static/assets/img
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: asdevv
+    api_key: 997914413943687
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
